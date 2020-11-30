@@ -39,7 +39,10 @@ public class User {
 
     public boolean isUnder18() {
         int age = Period.between(birthDate, LocalDate.now()).getYears();
-        if(age<18) return true;
-        else return false;
+        if(age<18) {
+            return true;
+        } else { 
+            return false;
+        }
     }
 }
