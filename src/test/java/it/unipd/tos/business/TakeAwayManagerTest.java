@@ -27,7 +27,7 @@ public class TakeAwayManagerTest{
         itemsOrdered.add(new MenuItem("Coppa alaska", MenuItem.items.Gelato, 2.50));
 
         try{
-            assertEquals(8, testBill.getOrderPrice(itemsOrdered, user, time), 0.0);
+            assertEquals(8.5, testBill.getOrderPrice(itemsOrdered, user, time), 0.0);
         } 
         catch (TakeAwayBillException exc){
             exc.getMessage();
